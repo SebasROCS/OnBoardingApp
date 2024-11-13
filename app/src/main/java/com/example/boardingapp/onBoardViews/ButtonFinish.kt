@@ -22,7 +22,7 @@ fun ButtonFinish(currentPage: Int, navController: NavController, store: StoreBoa
         horizontalArrangement = if(currentPage != 2) Arrangement.SpaceBetween
                 else Arrangement.Center
     ){
-        if(currentPage == 2)
+        if(currentPage == 3)
             OutlinedButton(onClick = { navController.navigate("home"){ popUpTo(0)} }) {
                 Text(text = "Entrar", modifier = Modifier
                     .padding(horizontal = 40.dp, vertical =  8.dp),

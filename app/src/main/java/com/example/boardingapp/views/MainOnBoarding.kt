@@ -3,9 +3,12 @@ package com.example.boardingapp.views
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.boardingapp.R
 import com.example.boardingapp.data.PageData
@@ -37,11 +40,20 @@ fun MainOnBoarding(navController: NavController, store: StoreBoarding){
 
     items.add(
         PageData(
+            R.raw.page4,
+            "El uso de onBoarding continúa",
+            "Esta es la tercera parte del uso Boarding mostrando una descripcion"
+        )
+    )
+
+    items.add(
+        PageData(
             R.raw.page2,
             "Fin de Boarding",
             "Esta es la pagina final del Boarding y ya debe de aparecer el boton"
         )
     )
+
 
     val pagerState = rememberPagerState (
         pageCount = items.size,
