@@ -27,7 +27,7 @@ fun MainOnBoarding(navController: NavController, store: StoreBoarding){
             R.raw.page1,
             "Bienvenidos",
             "Bienvenidos a la aplicacion para mostrar el uso del OnBoarding"
-        )
+        )//
     )
 
     items.add(
